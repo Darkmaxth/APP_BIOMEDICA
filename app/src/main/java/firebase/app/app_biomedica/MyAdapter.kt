@@ -41,6 +41,7 @@ class MyAdapter(private val userList: ArrayList<User>) : RecyclerView.Adapter<My
         holder.Nombre.text = user.Nombre
         holder.DNI.text = user.DNI
         holder.Enfermedad.text = user.Enfermedad
+        holder.Edad.text = user.Edad
         holder.Salud.text = user.Estado_de_Salud
 
         if(user.Genero.equals("masculino")){
@@ -70,6 +71,7 @@ class MyAdapter(private val userList: ArrayList<User>) : RecyclerView.Adapter<My
         val DNI : TextView = itemView.findViewById(R.id.tvdni)
         val Enfermedad : TextView = itemView.findViewById(R.id.tvenfermedad)
         val Salud : TextView = itemView.findViewById(R.id.tvsalud)
+        val Edad: TextView = itemView.findViewById(R.id.tvedad)
         val Imag : ImageView = itemView.findViewById(R.id.tvimagen)
 
 

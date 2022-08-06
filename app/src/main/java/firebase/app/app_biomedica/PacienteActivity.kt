@@ -15,64 +15,67 @@ class PacienteActivity : AppCompatActivity() {
         setContentView(R.layout.activity_paciente)
 
         buttonAgregar.setOnClickListener{
+            val xedad = addEdad.text.toString()
+            val xdni = addDNIPaciente.text.toString()
+            val xseguro = addSeguroPaciente.text.toString()
+            val xcelular= addCelularPaciente.text.toString()
+            val xnombre = addNombrePaciente.text.toString()
+            val xmaterno= addMaternoPaciente.text.toString()
+            val xpaterno = addPaternoPaciente.text.toString()
+            val xcivil= addCivilPaciente.text.toString()
+            val xdireccion= addDireccionPaciente.text.toString()
+            val xpeso = addPesoPaciente.text.toString()
+            val xaltura = addAlturaPaciente.text.toString()
+            val xenfermedad= addEnfermedadPaciente.text.toString()
+            val xsalud = addSaludPaciente.text.toString()
+            val xgenero= addGeneroPaciente.text.toString()
 
-            val naddDNIPaciente = addDNIPaciente.text.toString()
-            val naddSeguroPaciente = addSeguroPaciente.text.toString()
-            val naddCelularPaciente= addCelularPaciente.text.toString()
-            val naddNombrePaciente = addNombrePaciente.text.toString()
-            val naddMaternoPaciente = addMaternoPaciente.text.toString()
-            val naddPaternoPaciente = addPaternoPaciente.text.toString()
-            val naddCivilPaciente = addCivilPaciente.text.toString()
-            val naddDireccionPaciente= addDireccionPaciente.text.toString()
-            val naddPesoPaciente = addPesoPaciente.text.toString()
-            val naddAlturaPaciente = addAlturaPaciente.text.toString()
-            val naddEnfermedadPaciente = addEnfermedadPaciente.text.toString()
-            val naddSaludPaciente = addSaludPaciente.text.toString()
-            val naddGeneroPaciente = addGeneroPaciente.text.toString()
 
 
-            guardarPaciente(naddDNIPaciente,naddSeguroPaciente,naddCelularPaciente,naddNombrePaciente,
-                naddMaternoPaciente,naddPaternoPaciente,naddCivilPaciente,naddDireccionPaciente,
-                naddPesoPaciente,naddAlturaPaciente,naddEnfermedadPaciente,naddSaludPaciente,naddGeneroPaciente )
+            guardarPaciente(xedad, xdni,xseguro,xcelular,xnombre,xmaterno,xpaterno,xcivil,xdireccion,xpeso,xaltura,xenfermedad,xsalud,xgenero)
 
         }
     }
 
-
     private fun guardarPaciente(
-        naddDNIPaciente: String,
-        naddSeguroPaciente: String,
-        naddCelularPaciente: String,
-        naddNombrePaciente: String,
-        naddMaternoPaciente: String,
-        naddPaternoPaciente: String,
-        naddCivilPaciente: String,
-        naddDireccionPaciente: String,
-        naddPesoPaciente: String,
-        naddAlturaPaciente: String,
-        naddEnfermedadPaciente: String,
-        naddSaludPaciente: String,
-        naddGeneroPaciente: String,
-        ) {
-
+        xedad: String,
+        xdni: String,
+        xseguro: String,
+        xcelular: String,
+        xnombre: String,
+        xmaterno: String,
+        xpaterno: String,
+        xcivil: String,
+        xdireccion: String,
+        xpeso: String,
+        xaltura: String,
+        xenfermedad: String,
+        xsalud: String,
+        xgenero: String
+    ) {
 
         var datosinsertar = hashMapOf(
-            "Nombre" to naddNombrePaciente,
-            "Apellido_Paterno"   to naddPaternoPaciente,
-            "Apellido_Materno" to naddMaternoPaciente,
-            "DNI" to naddDNIPaciente,
-            "Tipo_de_Seguro" to naddSeguroPaciente,
-            "Celular" to naddCelularPaciente,
-            "Estado_Civil" to naddCivilPaciente,
-            "Direccion" to naddDireccionPaciente,
-            "Peso" to naddPesoPaciente,
-            "Altura" to naddAlturaPaciente,
-            "Enfermedad" to naddEnfermedadPaciente,
-            "Estado_de_Salud" to naddSaludPaciente,
-            "Genero" to  naddGeneroPaciente
+
+            "Nombre" to xnombre,
+            "Apellido_Paterno" to xpaterno,
+            "Apellido_Materno" to xmaterno,
+            "DNI" to xdni,
+            "Tipo_de_Seguro" to xseguro,
+            "Celular" to xcelular,
+            "Estado_Civil" to xcivil,
+            "Direccion" to xdireccion,
+            "Peso" to xpeso,
+            "Altura" to xaltura,
+            "Enfermedad" to xenfermedad,
+            "Edad" to xedad,
+            "Estado_de_Salud" to xsalud,
+            "Genero" to xgenero
         )
 
-        db.collection("Pacientes").document(naddDNIPaciente).set(datosinsertar)
+
+
+
+        db.collection("Pacientes").document(xdni).set(datosinsertar)
             .addOnSuccessListener {
                 Toast.makeText(this,"Se agrego correctamente", Toast.LENGTH_LONG).show()
                 addDNIPaciente.setText("")
@@ -87,12 +90,14 @@ class PacienteActivity : AppCompatActivity() {
                 addAlturaPaciente.setText("")
                 addEnfermedadPaciente.setText("")
                 addSaludPaciente.setText("")
+                addEdad.setText("")
                 addGeneroPaciente.setText("")
             }
 
 
-
-
-
+///
     }
+
+
+
 }

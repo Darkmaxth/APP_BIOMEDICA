@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/tvimagen"
         android:layout_width="70dp"
-        android:layout_marginVertical="10dp"
+        android:layout_marginVertical="19dp"
         android:layout_marginLeft="5dp"
         android:layout_height="70dp"
         android:contentDescription="Imagen"
@@ -73,14 +73,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="Estado:"
+                android:layout_marginLeft="60dp"
+                android:text="Edad:"
                 android:textColor="@color/black"
                 android:textSize="15dp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvsalud"
+                android:id="@+id/tvedad"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
@@ -106,6 +106,29 @@
 
             <TextView
                 android:id="@+id/tvenfermedad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="XXXX"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado de Salud:"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvsalud"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"

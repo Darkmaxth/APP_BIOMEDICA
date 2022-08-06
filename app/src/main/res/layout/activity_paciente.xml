@@ -120,7 +120,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:ems="8"
-        android:hint="Apellido Paterno"
+        android:hint="Apellido Materno"
         android:inputType="textPersonName"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -213,12 +213,12 @@
 
     <EditText
         android:id="@+id/addDireccionPaciente"
-        android:layout_width="366dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="24dp"
-        android:ems="17"
+        android:ems="11"
         android:inputType="textPersonName"
         android:hint="Direccion"
         android:textSize="18dp"
@@ -252,5 +252,19 @@
         app:layout_constraintHorizontal_bias="0.86"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="6"
+        android:textSize="18dp"
+        android:hint="Edad"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addCivilPaciente" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

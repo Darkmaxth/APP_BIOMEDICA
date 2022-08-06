@@ -94,9 +94,22 @@ class MonitoreoActivity : AppCompatActivity() {
                 //Toast.makeText(this@VerActivity, "You clicked on item no ${position} ",Toast.LENGTH_LONG).show()
 
                 val intent = Intent(this@MonitoreoActivity, InformacionActivity::class.java)
-                intent.putExtra("nombre",userArrayList[position].Nombre)
+
                 intent.putExtra("dni",userArrayList[position].DNI)
+                intent.putExtra("genero",userArrayList[position].Genero)
+                intent.putExtra("seguro",userArrayList[position].Tipo_de_Seguro)
+                intent.putExtra("celular",userArrayList[position].Celular)
+                intent.putExtra("nombre",userArrayList[position].Nombre)
+                intent.putExtra("paterno",userArrayList[position].Apellido_Paterno)
+                intent.putExtra("materno",userArrayList[position].Apellido_Materno)
+                intent.putExtra("civil",userArrayList[position].Estado_Civil)
+                intent.putExtra("direccion",userArrayList[position].Direccion)
+                intent.putExtra("edad",userArrayList[position].Edad)
+                intent.putExtra("peso",userArrayList[position].Peso)
+                intent.putExtra("altura",userArrayList[position].Altura)
                 intent.putExtra("enfermedad",userArrayList[position].Enfermedad)
+                intent.putExtra("estado",userArrayList[position].Estado_de_Salud)
+
                 startActivity(intent)
 
 

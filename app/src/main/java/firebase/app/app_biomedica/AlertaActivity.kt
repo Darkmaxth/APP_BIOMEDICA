@@ -94,10 +94,9 @@ class AlertaActivity : AppCompatActivity() {
 
                 //Toast.makeText(this@VerActivity, "You clicked on item no ${position} ",Toast.LENGTH_LONG).show()
 
-                val intent = Intent(this@AlertaActivity, InformacionActivity::class.java)
+                val intent = Intent(this@AlertaActivity, EmergenciaActivity::class.java)
                 intent.putExtra("nombre",userArrayList[position].Nombre)
-                intent.putExtra("dni",userArrayList[position].DNI)
-                intent.putExtra("enfermedad",userArrayList[position].Enfermedad)
+
                 startActivity(intent)
 
 

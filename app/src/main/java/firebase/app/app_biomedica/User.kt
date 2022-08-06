@@ -11,6 +11,7 @@ data class User(var Nombre: String?= null,
                 var Peso: String?=null,
                 var Altura: String?=null,
                 var Enfermedad: String?=null,
+                var Edad: String?=null,
                 var Estado_de_Salud: String?=null,
                 var Genero: String?=null){
 

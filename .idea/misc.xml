@@ -4,18 +4,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/drawable/ic_alerta.xml" value="0.1485" />
+        <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/drawable/ic_ambulancia.xml" value="0.1485" />
         <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/drawable/ic_color_monitoreo.xml" value="0.1655" />
         <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/drawable/ic_color_paciente.xml" value="0.1655" />
         <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/drawable/ic_hombre.xml" value="0.1485" />
         <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/drawable/ic_mujer.xml" value="0.1485" />
+        <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/drawable/ic_ubicacion.xml" value="0.1485" />
         <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/layout/activity_alerta.xml" value="0.209375" />
-        <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/layout/activity_informacion.xml" value="0.1953125" />
+        <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/layout/activity_emergencia.xml" value="0.25" />
+        <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/layout/activity_informacion.xml" value="0.2" />
         <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/layout/activity_monitore.xml" value="0.209375" />
         <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/layout/activity_monitoreo.xml" value="0.25" />
         <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/layout/activity_paciente.xml" value="0.25" />
-        <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/layout/list_item.xml" value="0.33" />
-        <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/layout/list_item1.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/layout/activity_recetas.xml" value="0.209375" />
+        <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/layout/list_item.xml" value="0.25" />
+        <entry key="..\:/Users/Lennox/AndroidStudioProjects/APP_BIOMEDICA/app/src/main/res/layout/list_item1.xml" value="0.25" />
       </map>
     </option>
   </component>
